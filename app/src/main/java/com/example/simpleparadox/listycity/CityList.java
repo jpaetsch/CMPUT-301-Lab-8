@@ -77,4 +77,12 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Return the number of distinct regions/provinces within the city list
+     * @return
+     * Number of different provinces in the city list */
+    public int countProvinces() {
+
+    }
 }
