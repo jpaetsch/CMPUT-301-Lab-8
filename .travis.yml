@@ -25,6 +25,6 @@ before_install:
 before_script:
   - chmod +x gradlew
 
-#script:
-#  - ./gradlew clean build
-#  - ./gradlew test
+script:
+  - ./gradlew clean build
+  - ./gradlew test
