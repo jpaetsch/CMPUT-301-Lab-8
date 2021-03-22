@@ -83,6 +83,14 @@ public class CityList {
      * @return
      * Number of different provinces in the city list */
     public int countProvinces() {
-        return -1;
+        ArrayList<String> provinceList = new ArrayList<>();
+
+        for (City c : cities) {
+            if(!provinceList.contains(c.getProvinceName())) {
+                provinceList.add(c.getProvinceName());
+            }
+        }
+
+        return provinceList.size();
     }
 }
