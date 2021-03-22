@@ -83,6 +83,6 @@ public class CityList {
      * @return
      * Number of different provinces in the city list */
     public int countProvinces() {
-
+        return -1;
     }
 }
