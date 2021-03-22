@@ -77,4 +77,20 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Return the number of distinct regions/provinces within the city list
+     * @return
+     * Number of different provinces in the city list */
+    public int countProvinces() {
+        ArrayList<String> provinceList = new ArrayList<>();
+
+        for (City c : cities) {
+            if(!provinceList.contains(c.getProvinceName())) {
+                provinceList.add(c.getProvinceName());
+            }
+        }
+
+        return provinceList.size();
+    }
 }
